@@ -62,7 +62,7 @@ void init_exti0 (void)
     EXTI->RTSR |= EXTI_RTSR_TR0;                                    // Rising edge triggerd
 
     NVIC_SetPriority (EXTI0_IRQn, 1);                               // Set Priority
-	NVIC_EnableIRQ (EXTI0_IRQn);                                    // Enable Interrupt
+    NVIC_EnableIRQ (EXTI0_IRQn);                                    // Enable Interrupt
 }
 
 void delay_ms (int32_t val)
